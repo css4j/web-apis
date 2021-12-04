@@ -13,16 +13,6 @@ on:
 
 jobs:
 
-  # Validate wrapper to prevent potential supply chain attack
-  gradle-wrapper-validation:
-    runs-on: ubuntu-latest
-
-    name: Validate Gradle wrapper
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: gradle/wrapper-validation-action@v1
-
   build:
     runs-on: ubuntu-latest
 
