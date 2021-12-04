@@ -1,4 +1,4 @@
-# Build workflow
+# Build CI workflow
 
 name: CI
 
@@ -16,11 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        java: [ '11', '17' ]
-
-    name: Java ${{ matrix.Java }} build
+    name: Java build
 
     steps:
       - uses: actions/checkout@v2
@@ -29,7 +25,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: ${{ matrix.java }}
+          java-version: '17'
           distribution: 'adopt'
 
       # Build
