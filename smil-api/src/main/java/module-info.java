@@ -12,6 +12,19 @@
  * Later modifications:
  * Copyright (c) 2020-2021 Carlos Amengual
  */
+
+/**
+ * Synchronized Multimedia Integration Language (SMIL) Java binding.
+ * <p>
+ * This module contains the Java binding for a subset of an
+ * <a href="https://www.w3.org/TR/smil-boston-dom/java-binding.zip">old SMIL
+ * version</a>. It has been adapted for compatibility with the subset of SMIL
+ * that Apache Batik (and hence EchoSVG) uses (it uses the SMIL packages at the
+ * <a href=
+ * "http://archive.apache.org/dist/xml/commons/xml-commons-external-1.3.04-src.zip">{@code xml-apis-ext-1.3.04}</a>
+ * package).
+ * </p>
+ */
 module org.w3c.dom.smil {
 	exports org.w3c.dom.smil;
 

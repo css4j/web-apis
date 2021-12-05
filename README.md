@@ -5,6 +5,30 @@ projects.
 
 <br/>
 
+## Why the Web APIs project?
+
+[EchoSVG](https://github.com/css4j/echosvg) is a fork of Apache Batik, an SVG
+toolkit in the Java language. Both projects require Java bindings based on old
+versions of the SVG and SMIL DOM APIs.
+
+Apache Batik uses the `xml-apis-ext-1.3.04.jar` package, which is unsuitable for
+modular Java due to the fact that it also contains the SAC package which is found
+in other packages.
+
+This project offers separate packages for SVGOM and SMIL which aren't the exact
+ones shipped by `xml-apis-ext-1.3.04` but are compatible with both EchoSVG and
+Batik.
+
+The code is based on old Java bindings downloaded from the W3C, and several
+method signatures had to be modified so they matched the implementations in
+EchoSVG/Batik. Although it would have been easy to upgrade EchoSVG instead, that
+would have created problems in cases where both `xml-apis-ext-1.3.04.jar` and
+`svgom-api` or `smil-api` were found in the classpath or modulepath (which is
+conceivable if, for example, somebody is using EchoSVG and Apache FOP in the
+same project).
+
+<br/>
+
 ## Building from source
 
 ### Requirements
@@ -13,6 +37,7 @@ To build `web-apis` you need the following software installed:
 
 - The [Git version control system](https://git-scm.com/downloads) is required to
 obtain the sources. Any recent version should suffice.
+
 - Java 11 or later. You can install it from your favourite package manager or by
 downloading from [Adoptium](https://adoptium.net/).
 
@@ -34,7 +59,9 @@ or just `gradlew build` (without the `./`) on a Windows command prompt.
 ### Deploying to a Maven repository
 
 Use:
+
 - `gradlew build publishToMavenLocal` to install in your local Maven repository.
+
 - `gradlew publish` to deploy to a (generally remote) Maven repository.
 
 Before deploying to a remote Maven repository, please read the
@@ -50,6 +77,7 @@ to learn which properties you need to set (like `mavenReleaseRepoUrl`or
 
 If your Gradle project depends on any of the web-apis modules, you can use this
 project's own Maven repository in a `repositories` section of your build file:
+
 ```groovy
 repositories {
     maven {

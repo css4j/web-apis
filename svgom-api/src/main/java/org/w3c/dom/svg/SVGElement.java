@@ -16,15 +16,39 @@ import org.w3c.dom.DOMException;
 import org.w3c.dom.Element;
 
 public interface SVGElement extends Element {
+
+	/**
+	 * Gets the {@code id} content attribute.
+	 * 
+	 * @return the value of the {@code id} attribute, or the empty string if none.
+	 */
 	public String getId();
 
+	/**
+	 * Sets the {@code id} content attribute.
+	 * 
+	 * @param id the value of the {@code id} attribute.
+	 * @throws DOMException
+	 */
 	public void setId(String id) throws DOMException;
 
 	public String getXMLbase();
 
 	public void setXMLbase(String xmlbase) throws DOMException;
 
+	/**
+	 * Gets the nearest ancestor {@code svg} element.
+	 * 
+	 * @return the nearest ancestor {@code svg} element, or {@code null} if the
+	 *         current element is the outermost {@code svg} element.
+	 */
 	public SVGSVGElement getOwnerSVGElement();
 
+	/**
+	 * Get the element that provides the SVG viewport for this element.
+	 * 
+	 * @return the nearest ancestor element that establishes an SVG viewport, or
+	 *         {@code null} if the current element is the outermost svg element.
+	 */
 	public SVGElement getViewportElement();
 }
