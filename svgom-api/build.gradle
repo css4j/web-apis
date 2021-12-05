@@ -8,7 +8,7 @@ dependencies {
 
 description = 'io.sf.carte:svgom-api'
 
-version = '1.0'
+version = '1.0.1'
 
 publishing.publications.maven(MavenPublication).pom {
 	description = "SVGOM 1.0 API Java binding"

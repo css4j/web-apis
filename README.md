@@ -94,10 +94,21 @@ repositories {
 please use that repository **only** for the artifact groups that it supplies.
 
 Then, in your `build.gradle` file you can list the dependencies, for example:
+
 ```groovy
 dependencies {
-    api "io.sf.carte:smil-api:1.0"
-    api "io.sf.carte:svgom-api:1.0"
+    api 'io.sf.carte:svgom-api:1.0.1'
+}
+```
+
+If you use the packages provided by this project, you may need to exclude the
+`xml-apis-ext` dependency in you Gradle or Maven build, for example:
+
+```groovy
+dependencies {
+    api ('io.sf.carte:svgom-api:1.0.1') {
+        exclude group: 'xml-apis', module: 'xml-apis-ext'
+    }
 }
 ```
 

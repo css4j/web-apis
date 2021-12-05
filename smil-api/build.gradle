@@ -4,7 +4,7 @@ plugins {
 
 description = 'io.sf.carte:smil-api'
 
-version = '1.0'
+version = '1.0.1'
 
 publishing.publications.maven(MavenPublication).pom {
 	description = "SMIL 1.0 API Java binding"
