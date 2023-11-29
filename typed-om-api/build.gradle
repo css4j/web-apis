@@ -1,0 +1,11 @@
+plugins {
+	id 'web-apis.java-conventions'
+}
+
+description = 'io.sf.carte:typed-om-api'
+
+version = '1.0-SNAPSHOT'
+
+publishing.publications.maven(MavenPublication).pom {
+	description = "CSS TYPED OM 1.0 API Java binding"
+}
