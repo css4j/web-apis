@@ -2,3 +2,5 @@ rootProject.name = 'web-apis'
 
 include(':smil-api')
 include(':svgom-api')
+include(':cssom-api')
+include(':cssview-api')
