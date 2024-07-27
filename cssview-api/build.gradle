@@ -1,0 +1,15 @@
+plugins {
+	id 'web-apis.java-conventions'
+}
+
+description = 'io.sf.carte:cssview-api'
+
+version = '0.1'
+
+dependencies {
+	api project(':cssom-api')
+}
+
+publishing.publications.maven(MavenPublication).pom {
+	description = "CSS View 1.0-pre Java binding"
+}
