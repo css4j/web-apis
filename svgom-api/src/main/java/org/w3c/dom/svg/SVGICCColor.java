@@ -14,6 +14,10 @@ package org.w3c.dom.svg;
 
 import org.w3c.dom.DOMException;
 
+/**
+ * Expresses an ICC-based color specification.
+ */
+@Deprecated(forRemoval = true)
 public interface SVGICCColor {
 	public String getColorProfile();
 

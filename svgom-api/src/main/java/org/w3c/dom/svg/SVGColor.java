@@ -15,22 +15,33 @@ package org.w3c.dom.svg;
 import org.w3c.dom.css.CSSValue;
 import org.w3c.dom.css.RGBColor;
 
+/**
+ * Corresponds to color value definition for properties ‘stop-color’,
+ * ‘flood-color’ and ‘lighting-color’.
+ */
+@Deprecated(forRemoval = true)
 public interface SVGColor extends CSSValue {
+
 	// Color Types
-	public static final short SVG_COLORTYPE_UNKNOWN = 0;
-	public static final short SVG_COLORTYPE_RGBCOLOR = 1;
-	public static final short SVG_COLORTYPE_RGBCOLOR_ICCCOLOR = 2;
-	public static final short SVG_COLORTYPE_CURRENTCOLOR = 3;
+	short SVG_COLORTYPE_UNKNOWN = 0;
+	short SVG_COLORTYPE_RGBCOLOR = 1;
+	short SVG_COLORTYPE_RGBCOLOR_ICCCOLOR = 2;
+	short SVG_COLORTYPE_CURRENTCOLOR = 3;
 
-	public short getColorType();
+	short getColorType();
 
-	public RGBColor getRGBColor();
+	default RGBColor getRGBColor() {
+		return null;
+	}
 
-	public SVGICCColor getICCColor();
+	default SVGICCColor getICCColor() {
+		return null;
+	}
 
-	public void setRGBColor(String rgbColor) throws SVGException;
+	void setRGBColor(String rgbColor) throws SVGException;
 
-	public void setRGBColorICCColor(String rgbColor, String iccColor) throws SVGException;
+	void setRGBColorICCColor(String rgbColor, String iccColor) throws SVGException;
 
-	public void setColor(short colorType, String rgbColor, String iccColor) throws SVGException;
+	void setColor(short colorType, String rgbColor, String iccColor) throws SVGException;
+
 }

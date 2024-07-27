@@ -12,6 +12,11 @@
 
 package org.w3c.dom.svg;
 
+/**
+ * Corresponds to basic type <paint> and represents the values of properties
+ * ‘fill’ and ‘stroke’.
+ */
+@Deprecated
 public interface SVGPaint extends SVGColor {
 	// Paint Types
 	public static final short SVG_PAINTTYPE_UNKNOWN = 0;
