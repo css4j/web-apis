@@ -34,6 +34,7 @@ public interface SVGColor extends CSSValue {
 		return null;
 	}
 
+	@SuppressWarnings("removal")
 	default SVGICCColor getICCColor() {
 		return null;
 	}
