@@ -17,6 +17,7 @@ package org.w3c.dom.svg;
  * ‘fill’ and ‘stroke’.
  */
 @Deprecated
+@SuppressWarnings("removal")
 public interface SVGPaint extends SVGColor {
 	// Paint Types
 	public static final short SVG_PAINTTYPE_UNKNOWN = 0;

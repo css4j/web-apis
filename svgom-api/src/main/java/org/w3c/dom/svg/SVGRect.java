@@ -14,20 +14,82 @@ package org.w3c.dom.svg;
 
 import org.w3c.dom.DOMException;
 
+/**
+ * Represents rectangular geometry.
+ * <p>
+ * Rectangles are defined as consisting of a (x,y) coordinate pair identifying a
+ * minimum X value, a minimum Y value, and a width and height, which are usually
+ * constrained to be non-negative.
+ * </p>
+ */
 public interface SVGRect {
-	public float getX();
 
-	public void setX(float x) throws DOMException;
+	/**
+	 * The minimum X value.
+	 * 
+	 * @return the minimum X value in user units.
+	 */
+	float getX();
 
-	public float getY();
+	/**
+	 * Sets the minimum X value.
+	 * 
+	 * @param x the minimum X value in user units.
+	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR if the rectangle corresponds
+	 *                      to a read only attribute or when the object itself is
+	 *                      read only.
+	 */
+	void setX(float x) throws DOMException;
 
-	public void setY(float y) throws DOMException;
+	/**
+	 * The minimum Y value.
+	 * 
+	 * @return the minimum Y value in user units.
+	 */
+	float getY();
 
-	public float getWidth();
+	/**
+	 * Sets the minimum Y value.
+	 * 
+	 * @param y the minimum Y value in user units.
+	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR if the rectangle corresponds
+	 *                      to a read only attribute or when the object itself is
+	 *                      read only.
+	 */
+	void setY(float y) throws DOMException;
 
-	public void setWidth(float width) throws DOMException;
+	/**
+	 * The width.
+	 * 
+	 * @return the width in user units.
+	 */
+	float getWidth();
 
-	public float getHeight();
+	/**
+	 * Sets the width of the rectangle.
+	 * 
+	 * @param width the width in user units.
+	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR if the rectangle corresponds
+	 *                      to a read only attribute or when the object itself is
+	 *                      read only.
+	 */
+	void setWidth(float width) throws DOMException;
 
-	public void setHeight(float height) throws DOMException;
+	/**
+	 * The height.
+	 * 
+	 * @return the height in user units.
+	 */
+	float getHeight();
+
+	/**
+	 * Sets the height of the rectangle.
+	 * 
+	 * @param height the height in user units.
+	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR if the rectangle corresponds
+	 *                      to a read only attribute or when the object itself is
+	 *                      read only.
+	 */
+	void setHeight(float height) throws DOMException;
+
 }

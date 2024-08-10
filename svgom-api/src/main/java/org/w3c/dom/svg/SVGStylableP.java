@@ -12,24 +12,37 @@
 
 package org.w3c.dom.svg;
 
-import org.w3c.dom.css.CSSValue;
+import org.w3c.css.om.CSSStyleDeclaration;
 
 /**
  * This interface is implemented on all objects corresponding to SVG elements
  * that can have <code>style</code>, <code>class</code> and presentation
  * attributes specified on them.
  */
-public interface SVGStylable extends SVGStylableP<CSSValue> {
+public interface SVGStylableP<V> {
 
 	/**
-	 * Returns the base value of a given presentation attribute as an object.
+	 * Gets the attribute {@code class} on this element.
+	 * 
+	 * @return the attribute {@code class}.
+	 */
+	SVGAnimatedString getClassName();
+
+	/**
+	 * Gets the inline style of this element.
+	 * 
+	 * @return the inline style.
+	 */
+	CSSStyleDeclaration getStyle();
+
+	/**
+	 * Returns the base value of a given presentation attribute as an object of type
+	 * {@code V}.
 	 * 
 	 * @param name the presentation attribute.
 	 * @return the given presentation attribute as an object.
 	 */
 	@Deprecated
-	default CSSValue getPresentationAttribute(String name) {
-		return null;
-	}
+	V getPresentationAttribute(String name);
 
 }
