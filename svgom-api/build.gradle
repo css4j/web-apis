@@ -4,7 +4,7 @@ plugins {
 
 dependencies {
 	api project(':smil-api')
-	api project(':cssom-api')
+	api 'io.sf.w3:cssom-api:0.1'
 }
 
 description = 'io.sf.carte:svgom-api'
