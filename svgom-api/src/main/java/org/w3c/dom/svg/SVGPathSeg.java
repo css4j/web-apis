@@ -24,102 +24,102 @@ public interface SVGPathSeg {
 	 * define a new value of this type or to attempt to switch an existing value to
 	 * this type.
 	 */
-	public static final short PATHSEG_UNKNOWN = 0;
+	short PATHSEG_UNKNOWN = 0;
 
 	/**
 	 * {@code closepath} ({@code z}) path data command.
 	 */
-	public static final short PATHSEG_CLOSEPATH = 1;
+	short PATHSEG_CLOSEPATH = 1;
 
 	/**
 	 * {@code absolute moveto} ({@code M}) path data command.
 	 */
-	public static final short PATHSEG_MOVETO_ABS = 2;
+	short PATHSEG_MOVETO_ABS = 2;
 
 	/**
 	 * {@code relative moveto} ({@code m}) path data command.
 	 */
-	public static final short PATHSEG_MOVETO_REL = 3;
+	short PATHSEG_MOVETO_REL = 3;
 
 	/**
 	 * {@code absolute lineto} ({@code L}) path data command.
 	 */
-	public static final short PATHSEG_LINETO_ABS = 4;
+	short PATHSEG_LINETO_ABS = 4;
 
 	/**
 	 * {@code relative lineto} ({@code l}) path data command.
 	 */
-	public static final short PATHSEG_LINETO_REL = 5;
+	short PATHSEG_LINETO_REL = 5;
 
 	/**
 	 * {@code absolute cubic Bézier curveto} ({@code C}) path data command.
 	 */
-	public static final short PATHSEG_CURVETO_CUBIC_ABS = 6;
+	short PATHSEG_CURVETO_CUBIC_ABS = 6;
 
 	/**
 	 * {@code relative cubic Bézier curveto} ({@code c}) path data command.
 	 */
-	public static final short PATHSEG_CURVETO_CUBIC_REL = 7;
+	short PATHSEG_CURVETO_CUBIC_REL = 7;
 
 	/**
 	 * {@code absolute quadratic Bézier curveto} ({@code Q}) path data command.
 	 */
-	public static final short PATHSEG_CURVETO_QUADRATIC_ABS = 8;
+	short PATHSEG_CURVETO_QUADRATIC_ABS = 8;
 
 	/**
 	 * {@code relative quadratic Bézier curveto} ({@code q}) path data command.
 	 */
-	public static final short PATHSEG_CURVETO_QUADRATIC_REL = 9;
+	short PATHSEG_CURVETO_QUADRATIC_REL = 9;
 
 	/**
 	 * {@code absolute arcto} ({@code A}) path data command.
 	 */
-	public static final short PATHSEG_ARC_ABS = 10;
+	short PATHSEG_ARC_ABS = 10;
 
 	/**
 	 * {@code relative arcto} ({@code a}) path data command.
 	 */
-	public static final short PATHSEG_ARC_REL = 11;
+	short PATHSEG_ARC_REL = 11;
 
 	/**
 	 * {@code absolute horizontal lineto} ({@code H}) path data command.
 	 */
-	public static final short PATHSEG_LINETO_HORIZONTAL_ABS = 12;
+	short PATHSEG_LINETO_HORIZONTAL_ABS = 12;
 
 	/**
 	 * {@code relative horizontal lineto} ({@code h}) path data command.
 	 */
-	public static final short PATHSEG_LINETO_HORIZONTAL_REL = 13;
+	short PATHSEG_LINETO_HORIZONTAL_REL = 13;
 
 	/**
 	 * {@code absolute vertical lineto} ({@code V}) path data command.
 	 */
-	public static final short PATHSEG_LINETO_VERTICAL_ABS = 14;
+	short PATHSEG_LINETO_VERTICAL_ABS = 14;
 
 	/**
 	 * {@code relative vertical lineto} ({@code v}) path data command.
 	 */
-	public static final short PATHSEG_LINETO_VERTICAL_REL = 15;
+	short PATHSEG_LINETO_VERTICAL_REL = 15;
 
 	/**
 	 * {@code absolute smooth cubic curveto} ({@code S}) path data command.
 	 */
-	public static final short PATHSEG_CURVETO_CUBIC_SMOOTH_ABS = 16;
+	short PATHSEG_CURVETO_CUBIC_SMOOTH_ABS = 16;
 
 	/**
 	 * {@code relative smooth cubic curveto} ({@code s}) path data command.
 	 */
-	public static final short PATHSEG_CURVETO_CUBIC_SMOOTH_REL = 17;
+	short PATHSEG_CURVETO_CUBIC_SMOOTH_REL = 17;
 
 	/**
 	 * {@code absolute smooth quadratic curveto} ({@code T}) path data command.
 	 */
-	public static final short PATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS = 18;
+	short PATHSEG_CURVETO_QUADRATIC_SMOOTH_ABS = 18;
 
 	/**
 	 * {@code relative smooth quadratic curveto} ({@code t}) path data command.
 	 */
-	public static final short PATHSEG_CURVETO_QUADRATIC_SMOOTH_REL = 19;
+	short PATHSEG_CURVETO_QUADRATIC_SMOOTH_REL = 19;
 
 	/**
 	 * Gets the type of the path segment as specified by one of the constants
@@ -127,7 +127,7 @@ public interface SVGPathSeg {
 	 * 
 	 * @return the type of the path segment.
 	 */
-	public short getPathSegType();
+	short getPathSegType();
 
 	/**
 	 * Gets the type of the path segment, specified by the corresponding
@@ -135,5 +135,5 @@ public interface SVGPathSeg {
 	 * 
 	 * @return the type of the path segment.
 	 */
-	public String getPathSegTypeAsLetter();
+	String getPathSegTypeAsLetter();
 }

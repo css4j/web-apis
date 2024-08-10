@@ -22,7 +22,7 @@ public interface SVGElement extends Element {
 	 * 
 	 * @return the value of the {@code id} attribute, or the empty string if none.
 	 */
-	public String getId();
+	String getId();
 
 	/**
 	 * Sets the {@code id} content attribute.
@@ -30,11 +30,11 @@ public interface SVGElement extends Element {
 	 * @param id the value of the {@code id} attribute.
 	 * @throws DOMException
 	 */
-	public void setId(String id) throws DOMException;
+	void setId(String id) throws DOMException;
 
-	public String getXMLbase();
+	String getXMLbase();
 
-	public void setXMLbase(String xmlbase) throws DOMException;
+	void setXMLbase(String xmlbase) throws DOMException;
 
 	/**
 	 * Gets the nearest ancestor {@code svg} element.
@@ -42,7 +42,7 @@ public interface SVGElement extends Element {
 	 * @return the nearest ancestor {@code svg} element, or {@code null} if the
 	 *         current element is the outermost {@code svg} element.
 	 */
-	public SVGSVGElement getOwnerSVGElement();
+	SVGSVGElement getOwnerSVGElement();
 
 	/**
 	 * Get the element that provides the SVG viewport for this element.
@@ -50,5 +50,5 @@ public interface SVGElement extends Element {
 	 * @return the nearest ancestor element that establishes an SVG viewport, or
 	 *         {@code null} if the current element is the outermost svg element.
 	 */
-	public SVGElement getViewportElement();
+	SVGElement getViewportElement();
 }

@@ -16,15 +16,15 @@ import org.w3c.dom.events.EventTarget;
 
 public interface SVGUseElement extends SVGElement, SVGURIReference, SVGTests, SVGLangSpace,
 		SVGExternalResourcesRequired, SVGStylable, SVGTransformable, EventTarget {
-	public SVGAnimatedLength getX();
+	SVGAnimatedLength getX();
 
-	public SVGAnimatedLength getY();
+	SVGAnimatedLength getY();
 
-	public SVGAnimatedLength getWidth();
+	SVGAnimatedLength getWidth();
 
-	public SVGAnimatedLength getHeight();
+	SVGAnimatedLength getHeight();
 
-	public SVGElementInstance getInstanceRoot();
+	SVGElementInstance getInstanceRoot();
 
-	public SVGElementInstance getAnimatedInstanceRoot();
+	SVGElementInstance getAnimatedInstanceRoot();
 }

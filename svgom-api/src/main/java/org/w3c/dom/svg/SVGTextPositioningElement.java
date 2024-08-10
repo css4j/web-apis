@@ -13,13 +13,13 @@
 package org.w3c.dom.svg;
 
 public interface SVGTextPositioningElement extends SVGTextContentElement {
-	public SVGAnimatedLengthList getX();
+	SVGAnimatedLengthList getX();
 
-	public SVGAnimatedLengthList getY();
+	SVGAnimatedLengthList getY();
 
-	public SVGAnimatedLengthList getDx();
+	SVGAnimatedLengthList getDx();
 
-	public SVGAnimatedLengthList getDy();
+	SVGAnimatedLengthList getDy();
 
-	public SVGAnimatedNumberList getRotate();
+	SVGAnimatedNumberList getRotate();
 }

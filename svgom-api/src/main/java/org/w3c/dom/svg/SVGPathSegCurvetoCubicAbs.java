@@ -15,27 +15,27 @@ package org.w3c.dom.svg;
 import org.w3c.dom.DOMException;
 
 public interface SVGPathSegCurvetoCubicAbs extends SVGPathSeg {
-	public float getX();
+	float getX();
 
-	public void setX(float x) throws DOMException;
+	void setX(float x) throws DOMException;
 
-	public float getY();
+	float getY();
 
-	public void setY(float y) throws DOMException;
+	void setY(float y) throws DOMException;
 
-	public float getX1();
+	float getX1();
 
-	public void setX1(float x1) throws DOMException;
+	void setX1(float x1) throws DOMException;
 
-	public float getY1();
+	float getY1();
 
-	public void setY1(float y1) throws DOMException;
+	void setY1(float y1) throws DOMException;
 
-	public float getX2();
+	float getX2();
 
-	public void setX2(float x2) throws DOMException;
+	void setX2(float x2) throws DOMException;
 
-	public float getY2();
+	float getY2();
 
-	public void setY2(float y2) throws DOMException;
+	void setY2(float y2) throws DOMException;
 }

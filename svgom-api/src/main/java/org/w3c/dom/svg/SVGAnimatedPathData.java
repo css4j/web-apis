@@ -31,7 +31,7 @@ public interface SVGAnimatedPathData {
 	 * 
 	 * @return the base contents of the {@code d} attribute.
 	 */
-	public SVGPathSegList getPathSegList();
+	SVGPathSegList getPathSegList();
 
 	/**
 	 * Gets the normalized contents of the {@code d} attribute.
@@ -62,7 +62,7 @@ public interface SVGAnimatedPathData {
 	 * 
 	 * @return the normalized contents of the {@code d} attribute.
 	 */
-	public SVGPathSegList getNormalizedPathSegList();
+	SVGPathSegList getNormalizedPathSegList();
 
 	/**
 	 * Gets the current animated contents of the {@code d} attribute.
@@ -77,7 +77,7 @@ public interface SVGAnimatedPathData {
 	 * 
 	 * @return the current animated contents of the {@code d} attribute.
 	 */
-	public SVGPathSegList getAnimatedPathSegList();
+	SVGPathSegList getAnimatedPathSegList();
 
 	/**
 	 * Gets the normalized current animated contents of the {@code d} attribute.
@@ -100,6 +100,6 @@ public interface SVGAnimatedPathData {
 	 * 
 	 * @return the normalized current animated contents of the {@code d} attribute.
 	 */
-	public SVGPathSegList getAnimatedNormalizedPathSegList();
+	SVGPathSegList getAnimatedNormalizedPathSegList();
 
 }

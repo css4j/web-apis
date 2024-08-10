@@ -17,11 +17,11 @@ import org.w3c.dom.smil.ElementTimeControl;
 
 public interface SVGAnimationElement
 		extends SVGElement, SVGTests, SVGExternalResourcesRequired, ElementTimeControl, EventTarget {
-	public SVGElement getTargetElement();
+	SVGElement getTargetElement();
 
-	public float getStartTime();
+	float getStartTime();
 
-	public float getCurrentTime();
+	float getCurrentTime();
 
-	public float getSimpleDuration() throws DOMException;
+	float getSimpleDuration() throws DOMException;
 }

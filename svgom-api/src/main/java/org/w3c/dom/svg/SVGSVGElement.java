@@ -22,87 +22,87 @@ import org.w3c.dom.events.EventTarget;
 
 public interface SVGSVGElement extends SVGElement, SVGTests, SVGLangSpace, SVGExternalResourcesRequired, SVGStylable,
 		SVGLocatable, SVGFitToViewBox, SVGZoomAndPan, EventTarget, DocumentEvent, ViewCSS, DocumentCSS {
-	public SVGAnimatedLength getX();
+	SVGAnimatedLength getX();
 
-	public SVGAnimatedLength getY();
+	SVGAnimatedLength getY();
 
-	public SVGAnimatedLength getWidth();
+	SVGAnimatedLength getWidth();
 
-	public SVGAnimatedLength getHeight();
+	SVGAnimatedLength getHeight();
 
-	public String getContentScriptType();
+	String getContentScriptType();
 
-	public void setContentScriptType(String contentScriptType) throws DOMException;
+	void setContentScriptType(String contentScriptType) throws DOMException;
 
-	public String getContentStyleType();
+	String getContentStyleType();
 
-	public void setContentStyleType(String contentStyleType) throws DOMException;
+	void setContentStyleType(String contentStyleType) throws DOMException;
 
-	public SVGRect getViewport();
+	SVGRect getViewport();
 
-	public float getPixelUnitToMillimeterX();
+	float getPixelUnitToMillimeterX();
 
-	public float getPixelUnitToMillimeterY();
+	float getPixelUnitToMillimeterY();
 
-	public float getScreenPixelToMillimeterX();
+	float getScreenPixelToMillimeterX();
 
-	public float getScreenPixelToMillimeterY();
+	float getScreenPixelToMillimeterY();
 
-	public boolean getUseCurrentView();
+	boolean getUseCurrentView();
 
-	public void setUseCurrentView(boolean useCurrentView) throws DOMException;
+	void setUseCurrentView(boolean useCurrentView) throws DOMException;
 
-	public SVGViewSpec getCurrentView();
+	SVGViewSpec getCurrentView();
 
-	public float getCurrentScale();
+	float getCurrentScale();
 
-	public void setCurrentScale(float currentScale) throws DOMException;
+	void setCurrentScale(float currentScale) throws DOMException;
 
-	public SVGPoint getCurrentTranslate();
+	SVGPoint getCurrentTranslate();
 
-	public int suspendRedraw(int max_wait_milliseconds);
+	int suspendRedraw(int max_wait_milliseconds);
 
-	public void unsuspendRedraw(int suspend_handle_id) throws DOMException;
+	void unsuspendRedraw(int suspend_handle_id) throws DOMException;
 
-	public void unsuspendRedrawAll();
+	void unsuspendRedrawAll();
 
-	public void forceRedraw();
+	void forceRedraw();
 
-	public void pauseAnimations();
+	void pauseAnimations();
 
-	public void unpauseAnimations();
+	void unpauseAnimations();
 
-	public boolean animationsPaused();
+	boolean animationsPaused();
 
-	public float getCurrentTime();
+	float getCurrentTime();
 
-	public void setCurrentTime(float seconds);
+	void setCurrentTime(float seconds);
 
-	public NodeList getIntersectionList(SVGRect rect, SVGElement referenceElement);
+	NodeList getIntersectionList(SVGRect rect, SVGElement referenceElement);
 
-	public NodeList getEnclosureList(SVGRect rect, SVGElement referenceElement);
+	NodeList getEnclosureList(SVGRect rect, SVGElement referenceElement);
 
-	public boolean checkIntersection(SVGElement element, SVGRect rect);
+	boolean checkIntersection(SVGElement element, SVGRect rect);
 
-	public boolean checkEnclosure(SVGElement element, SVGRect rect);
+	boolean checkEnclosure(SVGElement element, SVGRect rect);
 
-	public void deselectAll();
+	void deselectAll();
 
-	public SVGNumber createSVGNumber();
+	SVGNumber createSVGNumber();
 
-	public SVGLength createSVGLength();
+	SVGLength createSVGLength();
 
-	public SVGAngle createSVGAngle();
+	SVGAngle createSVGAngle();
 
-	public SVGPoint createSVGPoint();
+	SVGPoint createSVGPoint();
 
-	public SVGMatrix createSVGMatrix();
+	SVGMatrix createSVGMatrix();
 
-	public SVGRect createSVGRect();
+	SVGRect createSVGRect();
 
-	public SVGTransform createSVGTransform();
+	SVGTransform createSVGTransform();
 
-	public SVGTransform createSVGTransformFromMatrix(SVGMatrix matrix);
+	SVGTransform createSVGTransformFromMatrix(SVGMatrix matrix);
 
-	public Element getElementById(String elementId);
+	Element getElementById(String elementId);
 }

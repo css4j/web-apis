@@ -13,7 +13,7 @@
 package org.w3c.dom.svg;
 
 public interface SVGAnimatedNumberList {
-	public SVGNumberList getBaseVal();
+	SVGNumberList getBaseVal();
 
-	public SVGNumberList getAnimVal();
+	SVGNumberList getAnimVal();
 }

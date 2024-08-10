@@ -13,7 +13,7 @@
 package org.w3c.dom.svg;
 
 public interface SVGAnimatedRect {
-	public SVGRect getBaseVal();
+	SVGRect getBaseVal();
 
-	public SVGRect getAnimVal();
+	SVGRect getAnimVal();
 }

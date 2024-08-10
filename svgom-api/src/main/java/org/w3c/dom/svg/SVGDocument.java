@@ -16,13 +16,13 @@ import org.w3c.dom.Document;
 import org.w3c.dom.events.DocumentEvent;
 
 public interface SVGDocument extends Document, DocumentEvent {
-	public String getTitle();
+	String getTitle();
 
-	public String getReferrer();
+	String getReferrer();
 
-	public String getDomain();
+	String getDomain();
 
-	public String getURL();
+	String getURL();
 
-	public SVGSVGElement getRootElement();
+	SVGSVGElement getRootElement();
 }

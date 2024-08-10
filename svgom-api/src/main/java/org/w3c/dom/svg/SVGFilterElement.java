@@ -14,21 +14,21 @@ package org.w3c.dom.svg;
 
 public interface SVGFilterElement
 		extends SVGElement, SVGURIReference, SVGLangSpace, SVGExternalResourcesRequired, SVGStylable, SVGUnitTypes {
-	public SVGAnimatedEnumeration getFilterUnits();
+	SVGAnimatedEnumeration getFilterUnits();
 
-	public SVGAnimatedEnumeration getPrimitiveUnits();
+	SVGAnimatedEnumeration getPrimitiveUnits();
 
-	public SVGAnimatedLength getX();
+	SVGAnimatedLength getX();
 
-	public SVGAnimatedLength getY();
+	SVGAnimatedLength getY();
 
-	public SVGAnimatedLength getWidth();
+	SVGAnimatedLength getWidth();
 
-	public SVGAnimatedLength getHeight();
+	SVGAnimatedLength getHeight();
 
-	public SVGAnimatedInteger getFilterResX();
+	SVGAnimatedInteger getFilterResX();
 
-	public SVGAnimatedInteger getFilterResY();
+	SVGAnimatedInteger getFilterResY();
 
-	public void setFilterRes(int filterResX, int filterResY);
+	void setFilterRes(int filterResX, int filterResY);
 }

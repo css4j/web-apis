@@ -13,11 +13,11 @@
 package org.w3c.dom.svg;
 
 public interface SVGTests {
-	public SVGStringList getRequiredFeatures();
+	SVGStringList getRequiredFeatures();
 
-	public SVGStringList getRequiredExtensions();
+	SVGStringList getRequiredExtensions();
 
-	public SVGStringList getSystemLanguage();
+	SVGStringList getSystemLanguage();
 
-	public boolean hasExtension(String extension);
+	boolean hasExtension(String extension);
 }

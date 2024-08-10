@@ -29,7 +29,7 @@ public interface CSSNumericValue extends CSSStyleValue {
 		flex,
 		/** &lt;percentage&gt; */
 		percent
-	};
+	}
 
 	/**
 	 * A "map" from types to powers.

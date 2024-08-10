@@ -27,6 +27,7 @@ public interface SVGStylable extends SVGStylableP<CSSValue> {
 	 * @param name the presentation attribute.
 	 * @return the given presentation attribute as an object.
 	 */
+	@Override
 	@Deprecated
 	default CSSValue getPresentationAttribute(String name) {
 		return null;
