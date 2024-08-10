@@ -16,15 +16,15 @@ import org.w3c.dom.events.EventTarget;
 
 public interface SVGRectElement extends SVGElement, SVGTests, SVGLangSpace, SVGExternalResourcesRequired, SVGStylable,
 		SVGTransformable, EventTarget {
-	public SVGAnimatedLength getX();
+	SVGAnimatedLength getX();
 
-	public SVGAnimatedLength getY();
+	SVGAnimatedLength getY();
 
-	public SVGAnimatedLength getWidth();
+	SVGAnimatedLength getWidth();
 
-	public SVGAnimatedLength getHeight();
+	SVGAnimatedLength getHeight();
 
-	public SVGAnimatedLength getRx();
+	SVGAnimatedLength getRx();
 
-	public SVGAnimatedLength getRy();
+	SVGAnimatedLength getRy();
 }

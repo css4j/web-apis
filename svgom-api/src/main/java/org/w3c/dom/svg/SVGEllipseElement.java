@@ -16,11 +16,11 @@ import org.w3c.dom.events.EventTarget;
 
 public interface SVGEllipseElement extends SVGElement, SVGTests, SVGLangSpace, SVGExternalResourcesRequired,
 		SVGStylable, SVGTransformable, EventTarget {
-	public SVGAnimatedLength getCx();
+	SVGAnimatedLength getCx();
 
-	public SVGAnimatedLength getCy();
+	SVGAnimatedLength getCy();
 
-	public SVGAnimatedLength getRx();
+	SVGAnimatedLength getRx();
 
-	public SVGAnimatedLength getRy();
+	SVGAnimatedLength getRy();
 }

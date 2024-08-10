@@ -19,6 +19,7 @@ public interface CSSStyleValue {
 	 * 
 	 * @return a parsable representation of this value.
 	 */
+	@Override
 	String toString();
 
 }

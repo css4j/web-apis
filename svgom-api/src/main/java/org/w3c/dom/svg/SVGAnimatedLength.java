@@ -13,7 +13,7 @@
 package org.w3c.dom.svg;
 
 public interface SVGAnimatedLength {
-	public SVGLength getBaseVal();
+	SVGLength getBaseVal();
 
-	public SVGLength getAnimVal();
+	SVGLength getAnimVal();
 }

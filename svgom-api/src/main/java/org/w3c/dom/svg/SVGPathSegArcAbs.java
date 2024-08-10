@@ -15,31 +15,31 @@ package org.w3c.dom.svg;
 import org.w3c.dom.DOMException;
 
 public interface SVGPathSegArcAbs extends SVGPathSeg {
-	public float getX();
+	float getX();
 
-	public void setX(float x) throws DOMException;
+	void setX(float x) throws DOMException;
 
-	public float getY();
+	float getY();
 
-	public void setY(float y) throws DOMException;
+	void setY(float y) throws DOMException;
 
-	public float getR1();
+	float getR1();
 
-	public void setR1(float r1) throws DOMException;
+	void setR1(float r1) throws DOMException;
 
-	public float getR2();
+	float getR2();
 
-	public void setR2(float r2) throws DOMException;
+	void setR2(float r2) throws DOMException;
 
-	public float getAngle();
+	float getAngle();
 
-	public void setAngle(float angle) throws DOMException;
+	void setAngle(float angle) throws DOMException;
 
-	public boolean getLargeArcFlag();
+	boolean getLargeArcFlag();
 
-	public void setLargeArcFlag(boolean largeArcFlag) throws DOMException;
+	void setLargeArcFlag(boolean largeArcFlag) throws DOMException;
 
-	public boolean getSweepFlag();
+	boolean getSweepFlag();
 
-	public void setSweepFlag(boolean sweepFlag) throws DOMException;
+	void setSweepFlag(boolean sweepFlag) throws DOMException;
 }

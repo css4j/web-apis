@@ -13,13 +13,13 @@
 package org.w3c.dom.svg;
 
 public interface SVGFilterPrimitiveStandardAttributes extends SVGStylable {
-	public SVGAnimatedLength getX();
+	SVGAnimatedLength getX();
 
-	public SVGAnimatedLength getY();
+	SVGAnimatedLength getY();
 
-	public SVGAnimatedLength getWidth();
+	SVGAnimatedLength getWidth();
 
-	public SVGAnimatedLength getHeight();
+	SVGAnimatedLength getHeight();
 
-	public SVGAnimatedString getResult();
+	SVGAnimatedString getResult();
 }

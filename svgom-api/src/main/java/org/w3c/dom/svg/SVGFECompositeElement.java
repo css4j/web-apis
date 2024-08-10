@@ -14,25 +14,25 @@ package org.w3c.dom.svg;
 
 public interface SVGFECompositeElement extends SVGElement, SVGFilterPrimitiveStandardAttributes {
 	// Composite Operators
-	public static final short SVG_FECOMPOSITE_OPERATOR_UNKNOWN = 0;
-	public static final short SVG_FECOMPOSITE_OPERATOR_OVER = 1;
-	public static final short SVG_FECOMPOSITE_OPERATOR_IN = 2;
-	public static final short SVG_FECOMPOSITE_OPERATOR_OUT = 3;
-	public static final short SVG_FECOMPOSITE_OPERATOR_ATOP = 4;
-	public static final short SVG_FECOMPOSITE_OPERATOR_XOR = 5;
-	public static final short SVG_FECOMPOSITE_OPERATOR_ARITHMETIC = 6;
+	short SVG_FECOMPOSITE_OPERATOR_UNKNOWN = 0;
+	short SVG_FECOMPOSITE_OPERATOR_OVER = 1;
+	short SVG_FECOMPOSITE_OPERATOR_IN = 2;
+	short SVG_FECOMPOSITE_OPERATOR_OUT = 3;
+	short SVG_FECOMPOSITE_OPERATOR_ATOP = 4;
+	short SVG_FECOMPOSITE_OPERATOR_XOR = 5;
+	short SVG_FECOMPOSITE_OPERATOR_ARITHMETIC = 6;
 
-	public SVGAnimatedString getIn1();
+	SVGAnimatedString getIn1();
 
-	public SVGAnimatedString getIn2();
+	SVGAnimatedString getIn2();
 
-	public SVGAnimatedEnumeration getOperator();
+	SVGAnimatedEnumeration getOperator();
 
-	public SVGAnimatedNumber getK1();
+	SVGAnimatedNumber getK1();
 
-	public SVGAnimatedNumber getK2();
+	SVGAnimatedNumber getK2();
 
-	public SVGAnimatedNumber getK3();
+	SVGAnimatedNumber getK3();
 
-	public SVGAnimatedNumber getK4();
+	SVGAnimatedNumber getK4();
 }

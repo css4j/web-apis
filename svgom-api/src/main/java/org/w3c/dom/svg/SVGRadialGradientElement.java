@@ -13,13 +13,13 @@
 package org.w3c.dom.svg;
 
 public interface SVGRadialGradientElement extends SVGGradientElement {
-	public SVGAnimatedLength getCx();
+	SVGAnimatedLength getCx();
 
-	public SVGAnimatedLength getCy();
+	SVGAnimatedLength getCy();
 
-	public SVGAnimatedLength getR();
+	SVGAnimatedLength getR();
 
-	public SVGAnimatedLength getFx();
+	SVGAnimatedLength getFx();
 
-	public SVGAnimatedLength getFy();
+	SVGAnimatedLength getFy();
 }

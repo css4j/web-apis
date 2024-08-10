@@ -38,7 +38,7 @@ public interface SVGMatrix {
 	/**
 	 * @return the {@code a} component of the matrix.
 	 */
-	public float getA();
+	float getA();
 
 	/**
 	 * Set the {@code a} component of the matrix.
@@ -47,12 +47,12 @@ public interface SVGMatrix {
 	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR on an attempt to change the
 	 *                      value of a read only attribute.
 	 */
-	public void setA(float a) throws DOMException;
+	void setA(float a) throws DOMException;
 
 	/**
 	 * @return the {@code b} component of the matrix.
 	 */
-	public float getB();
+	float getB();
 
 	/**
 	 * Set the {@code b} component of the matrix.
@@ -61,12 +61,12 @@ public interface SVGMatrix {
 	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR on an attempt to change the
 	 *                      value of a read only attribute.
 	 */
-	public void setB(float b) throws DOMException;
+	void setB(float b) throws DOMException;
 
 	/**
 	 * @return the {@code c} component of the matrix.
 	 */
-	public float getC();
+	float getC();
 
 	/**
 	 * Set the {@code c} component of the matrix.
@@ -75,12 +75,12 @@ public interface SVGMatrix {
 	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR on an attempt to change the
 	 *                      value of a read only attribute.
 	 */
-	public void setC(float c) throws DOMException;
+	void setC(float c) throws DOMException;
 
 	/**
 	 * @return the {@code d} component of the matrix.
 	 */
-	public float getD();
+	float getD();
 
 	/**
 	 * Set the {@code d} component of the matrix.
@@ -89,12 +89,12 @@ public interface SVGMatrix {
 	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR on an attempt to change the
 	 *                      value of a read only attribute.
 	 */
-	public void setD(float d) throws DOMException;
+	void setD(float d) throws DOMException;
 
 	/**
 	 * @return the {@code e} component of the matrix.
 	 */
-	public float getE();
+	float getE();
 
 	/**
 	 * Set the {@code e} component of the matrix.
@@ -103,12 +103,12 @@ public interface SVGMatrix {
 	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR on an attempt to change the
 	 *                      value of a read only attribute.
 	 */
-	public void setE(float e) throws DOMException;
+	void setE(float e) throws DOMException;
 
 	/**
 	 * @return the {@code f} component of the matrix.
 	 */
-	public float getF();
+	float getF();
 
 	/**
 	 * Set the {@code f} component of the matrix.
@@ -117,7 +117,7 @@ public interface SVGMatrix {
 	 * @throws DOMException NO_MODIFICATION_ALLOWED_ERR on an attempt to change the
 	 *                      value of a read only attribute.
 	 */
-	public void setF(float f) throws DOMException;
+	void setF(float f) throws DOMException;
 
 	/**
 	 * Performs matrix multiplication. This matrix is post-multiplied by another
@@ -126,14 +126,14 @@ public interface SVGMatrix {
 	 * @param secondMatrix the matrix which is post-multiplied to this matrix.
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix multiply(SVGMatrix secondMatrix);
+	SVGMatrix multiply(SVGMatrix secondMatrix);
 
 	/**
 	 * @return the inverse matrix.
 	 * @throws SVGException SVG_MATRIX_NOT_INVERTABLE if this matrix is not
 	 *                      invertible.
 	 */
-	public SVGMatrix inverse() throws SVGException;
+	SVGMatrix inverse() throws SVGException;
 
 	/**
 	 * Post-multiplies a translation transformation on the current matrix and
@@ -143,7 +143,7 @@ public interface SVGMatrix {
 	 * @param y the distance to translate along the y-axis.
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix translate(float x, float y);
+	SVGMatrix translate(float x, float y);
 
 	/**
 	 * Post-multiplies a uniform scale transformation on the current matrix and
@@ -152,7 +152,7 @@ public interface SVGMatrix {
 	 * @param scaleFactor the scale factor in both X and Y.
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix scale(float scaleFactor);
+	SVGMatrix scale(float scaleFactor);
 
 	/**
 	 * Post-multiplies a non-uniform scale transformation on the current matrix and
@@ -162,7 +162,7 @@ public interface SVGMatrix {
 	 * @param scaleFactorY the scale factor in Y.
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix scaleNonUniform(float scaleFactorX, float scaleFactorY);
+	SVGMatrix scaleNonUniform(float scaleFactorX, float scaleFactorY);
 
 	/**
 	 * Post-multiplies a rotation transformation on the current matrix and returns
@@ -171,7 +171,7 @@ public interface SVGMatrix {
 	 * @param angle the rotation angle.
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix rotate(float angle);
+	SVGMatrix rotate(float angle);
 
 	/**
 	 * Post-multiplies a rotation transformation on the current matrix and returns
@@ -185,7 +185,7 @@ public interface SVGMatrix {
 	 * @throws SVGException SVG_INVALID_VALUE_ERR if one of the parameters is an
 	 *                      invalid value.
 	 */
-	public SVGMatrix rotateFromVector(float x, float y) throws SVGException;
+	SVGMatrix rotateFromVector(float x, float y) throws SVGException;
 
 	/**
 	 * Post-multiplies the transformation {@code [-1 0 0 1 0 0]} and returns the
@@ -193,7 +193,7 @@ public interface SVGMatrix {
 	 * 
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix flipX();
+	SVGMatrix flipX();
 
 	/**
 	 * Post-multiplies the transformation {@code [1 0 0 -1 0 0]} and returns the
@@ -201,7 +201,7 @@ public interface SVGMatrix {
 	 * 
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix flipY();
+	SVGMatrix flipY();
 
 	/**
 	 * Post-multiplies a skewX transformation on the current matrix and returns the
@@ -210,7 +210,7 @@ public interface SVGMatrix {
 	 * @param angle the skew angle.
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix skewX(float angle);
+	SVGMatrix skewX(float angle);
 
 	/**
 	 * Post-multiplies a skewY transformation on the current matrix and returns the
@@ -219,6 +219,6 @@ public interface SVGMatrix {
 	 * @param angle the skew angle.
 	 * @return the resulting matrix.
 	 */
-	public SVGMatrix skewY(float angle);
+	SVGMatrix skewY(float angle);
 
 }
