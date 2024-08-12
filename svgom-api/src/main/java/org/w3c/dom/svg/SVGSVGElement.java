@@ -78,8 +78,30 @@ public interface SVGSVGElement extends SVGElement, SVGTests, SVGLangSpace, SVGEx
 
 	void setCurrentTime(float seconds);
 
+	/**
+	 * Get the descendants of this element that intersect with the given rectangle
+	 * using {@code referenceElement} as the element in whose coordinate space
+	 * {@code rect} is to be interpreted.
+	 * 
+	 * @param rect             the rectangle.
+	 * @param referenceElement If not null, then any intersected element that
+	 *                         doesn't have the referenceElement as ancestor must
+	 *                         not be included in the returned NodeList.
+	 * @return the list of matching descendants.
+	 */
 	NodeList getIntersectionList(SVGRect rect, SVGElement referenceElement);
 
+	/**
+	 * Get the descendants of this element element that are enclosed within the
+	 * given rectangle, using {@code referenceElement} as the element in whose
+	 * coordinate space {@code rect} is to be interpreted.
+	 * 
+	 * @param rect             the rectangle.
+	 * @param referenceElement If not null, then any enclosed element that doesn't
+	 *                         have the referenceElement as ancestor must not be
+	 *                         included in the returned NodeList.
+	 * @return the list of matching descendants.
+	 */
 	NodeList getEnclosureList(SVGRect rect, SVGElement referenceElement);
 
 	boolean checkIntersection(SVGElement element, SVGRect rect);
