@@ -12,6 +12,20 @@
 
 package org.w3c.dom.svg;
 
+/**
+ * Represents the <code>href</code> attribute and the deprecated
+ * <code>xlink:href</code> attribute.
+ */
 public interface SVGURIReference {
+
+	/**
+	 * Gets the value of the <code>href</code> attribute and, on elements that are
+	 * defined to support it, the deprecated <code>xlink:href</code> attribute.
+	 * 
+	 * @return the <code>href</code> attribute if exists, or the deprecated
+	 *         <code>xlink:href</code> attribute if exists and the element is
+	 *         defined to support it, {@code null} otherwise.
+	 */
 	SVGAnimatedString getHref();
+
 }

@@ -14,29 +14,100 @@ package org.w3c.dom.svg;
 
 import org.w3c.dom.DOMException;
 
+/**
+ * Represents the <code>preserveAspectRatio</code> attribute.
+ */
 public interface SVGPreserveAspectRatio {
 	// Alignment Types
+
+	/**
+	 * Some other value.
+	 */
 	short SVG_PRESERVEASPECTRATIO_UNKNOWN = 0;
+
+	/**
+	 * The none keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_NONE = 1;
+
+	/**
+	 * The xMinYMin keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMINYMIN = 2;
+
+	/**
+	 * The xMidYMin keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMIDYMIN = 3;
+
+	/**
+	 * The xMaxYMin keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMAXYMIN = 4;
+
+	/**
+	 * The xMinYMid keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMINYMID = 5;
+
+	/**
+	 * The xMidYMid keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMIDYMID = 6;
+
+	/**
+	 * The xMaxYMid keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMAXYMID = 7;
+
+	/**
+	 * The xMinYMax keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMINYMAX = 8;
+
+	/**
+	 * The xMidYMax keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMIDYMAX = 9;
+
+	/**
+	 * The xMaxYMax keyword.
+	 */
 	short SVG_PRESERVEASPECTRATIO_XMAXYMAX = 10;
+
 	// Meet-or-slice Types
+
+	/**
+	 * Some other value.
+	 */
 	short SVG_MEETORSLICE_UNKNOWN = 0;
+
+	/**
+	 * The meet keyword.
+	 */
 	short SVG_MEETORSLICE_MEET = 1;
+
+	/**
+	 * The slice keyword.
+	 */
 	short SVG_MEETORSLICE_SLICE = 2;
 
+	/**
+	 * Get the alignment keyword part of the ‘preserveAspectRatio’ value.
+	 * 
+	 * @return the alignment keyword part of the ‘preserveAspectRatio’ value.
+	 */
 	short getAlign();
 
 	void setAlign(short align) throws DOMException;
 
+	/**
+	 * Get the meet-or-slice keyword part of the ‘preserveAspectRatio’ value.
+	 * 
+	 * @return the meet-or-slice keyword part of the ‘preserveAspectRatio’ value.
+	 */
 	short getMeetOrSlice();
 
 	void setMeetOrSlice(short meetOrSlice) throws DOMException;
+
 }
