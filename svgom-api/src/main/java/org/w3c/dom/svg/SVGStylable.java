@@ -12,6 +12,8 @@
 
 package org.w3c.dom.svg;
 
+import org.w3c.css.om.CSSStyleDeclaration;
+import org.w3c.css.om.typed.CSSStyleValue;
 import org.w3c.dom.css.CSSValue;
 
 /**
@@ -19,17 +21,44 @@ import org.w3c.dom.css.CSSValue;
  * that can have <code>style</code>, <code>class</code> and presentation
  * attributes specified on them.
  */
-public interface SVGStylable extends SVGStylableP<CSSValue> {
+public interface SVGStylable {
+
+	/**
+	 * Gets the attribute {@code class} on this element.
+	 * 
+	 * @return the attribute {@code class}.
+	 */
+	SVGAnimatedString getClassName();
+
+	/**
+	 * Gets the inline style of this element.
+	 * 
+	 * @return the inline style.
+	 */
+	CSSStyleDeclaration getStyle();
 
 	/**
 	 * Returns the base value of a given presentation attribute as an object.
 	 * 
 	 * @param name the presentation attribute.
-	 * @return the given presentation attribute as an object.
+	 * @return the given presentation attribute as a {@code CSSValue}, {@code null}
+	 *         if no value was defined for the given attribute or this
+	 *         implementation does not support the {@code CSSValue} API.
 	 */
-	@Override
 	@Deprecated
 	default CSSValue getPresentationAttribute(String name) {
+		return null;
+	}
+
+	/**
+	 * Returns the base value of a given presentation attribute as an object.
+	 * 
+	 * @param name the presentation attribute.
+	 * @return the given presentation attribute as a {@code CSSStyleValue},
+	 *         {@code null} if no value was defined for the given attribute or this
+	 *         implementation does not support the {@code CSSStyleValue} API.
+	 */
+	default CSSStyleValue getPresentationAttributeValue(String name) {
 		return null;
 	}
 
