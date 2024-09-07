@@ -86,12 +86,16 @@ repositories {
             releasesOnly()
         }
         content {
-            includeGroup 'io.sf.carte'
+            // Include io.sf.w3 as well as all the groups used by EchoSVG
+            includeGroupByRegex 'io\\.sf\\..*'
+
+            // Alternative to the regex:
+            //includeGroup 'io.sf.w3'
         }
     }
 }
 ```
-please use that repository **only** for the artifact groups that it supplies.
+please use that repository only for the artifact groups that it supplies.
 
 Then, in your `build.gradle` file you can list the dependencies, for example:
 
