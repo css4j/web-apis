@@ -90,6 +90,7 @@ repositories {
             includeGroupByRegex 'io\\.sf\\..*'
 
             // Alternative to the regex:
+            //includeGroup 'io.sf.carte'
             //includeGroup 'io.sf.w3'
         }
     }
