@@ -40,13 +40,25 @@ public interface SVGSVGElement extends SVGElement, SVGTests, SVGLangSpace, SVGEx
 
 	SVGRect getViewport();
 
-	float getPixelUnitToMillimeterX();
+	@Deprecated
+	default float getPixelUnitToMillimeterX() {
+		return 0.2645833333333333333333333333f;
+	}
 
-	float getPixelUnitToMillimeterY();
+	@Deprecated
+	default float getPixelUnitToMillimeterY() {
+		return 0.2645833333333333333333333333f;
+	}
 
-	float getScreenPixelToMillimeterX();
+	@Deprecated
+	default float getScreenPixelToMillimeterX() {
+		return 0.2645833333333333333333333333f;
+	}
 
-	float getScreenPixelToMillimeterY();
+	@Deprecated
+	default float getScreenPixelToMillimeterY() {
+		return 0.2645833333333333333333333333f;
+	}
 
 	boolean getUseCurrentView();
 
