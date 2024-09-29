@@ -116,17 +116,6 @@ tasks.withType(AbstractArchiveTask).configureEach {
 	}
 }
 
-tasks.register('cleanBuildSrc') {
-	description = 'Clean the buildSrc directory'
-	doLast {
-		delete("$rootDir/buildSrc/build")
-	}
-}
-
-tasks.named('clean') {
-	finalizedBy('cleanBuildSrc')
-}
-
 publishing {
 	publications {
 		maven(MavenPublication) {
