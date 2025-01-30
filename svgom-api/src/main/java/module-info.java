@@ -10,7 +10,7 @@
  * [1] http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
  * 
  * Later modifications:
- * Copyright (c) 2020-2024 Carlos Amengual
+ * Copyright (c) 2020-2025 Carlos Amengual
  */
 
 /**
