@@ -102,7 +102,7 @@ Then, in your `build.gradle` file you can list the dependencies, for example:
 
 ```groovy
 dependencies {
-    api 'io.sf.carte:svgom-api:1.0.1'
+    api 'io.sf.carte:svgom-api:1.1.3'
 }
 ```
 
@@ -111,7 +111,7 @@ If you use the packages provided by this project, you may need to exclude the
 
 ```groovy
 dependencies {
-    api ('io.sf.carte:svgom-api:1.0.1') {
+    api ('io.sf.carte:svgom-api:1.1.3') {
         exclude group: 'xml-apis', module: 'xml-apis-ext'
     }
 }
