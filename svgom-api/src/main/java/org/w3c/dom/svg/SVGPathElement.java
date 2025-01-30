@@ -14,14 +14,8 @@ package org.w3c.dom.svg;
 
 import org.w3c.dom.events.EventTarget;
 
-public interface SVGPathElement extends SVGElement, SVGTests, SVGLangSpace, SVGExternalResourcesRequired, SVGStylable,
-		SVGTransformable, EventTarget, SVGAnimatedPathData {
-	SVGAnimatedNumber getPathLength();
-
-	float getTotalLength();
-
-	SVGPoint getPointAtLength(float distance);
-
+public interface SVGPathElement extends SVGGeometryElement, SVGLangSpace, SVGExternalResourcesRequired,
+		EventTarget, SVGAnimatedPathData {
 	int getPathSegAtLength(float distance);
 
 	SVGPathSegClosePath createSVGPathSegClosePath();

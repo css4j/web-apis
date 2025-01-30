@@ -14,8 +14,8 @@ package org.w3c.dom.svg;
 
 import org.w3c.dom.events.EventTarget;
 
-public interface SVGLineElement extends SVGElement, SVGTests, SVGLangSpace, SVGExternalResourcesRequired, SVGStylable,
-		SVGTransformable, EventTarget {
+public interface SVGLineElement extends SVGGraphicsElement, SVGLangSpace, SVGExternalResourcesRequired,
+		EventTarget {
 	SVGAnimatedLength getX1();
 
 	SVGAnimatedLength getY1();
