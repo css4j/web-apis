@@ -38,7 +38,7 @@ To build `web-apis` you need the following software installed:
 - The [Git version control system](https://git-scm.com/downloads) is required to
 obtain the sources. Any recent version should suffice.
 
-- Java 11 or later. You can install it from your favourite package manager or by
+- Java 11 to 21. You can install it from your favourite package manager or by
 downloading from [Adoptium](https://adoptium.net/).
 
 <br/>
@@ -102,7 +102,7 @@ Then, in your `build.gradle` file you can list the dependencies, for example:
 
 ```groovy
 dependencies {
-    api 'io.sf.carte:svgom-api:1.1.3'
+    api 'io.sf.carte:svgom-api:1.1.4'
 }
 ```
 
@@ -111,7 +111,7 @@ If you use the packages provided by this project, you may need to exclude the
 
 ```groovy
 dependencies {
-    api ('io.sf.carte:svgom-api:1.1.3') {
+    api ('io.sf.carte:svgom-api:1.1.4') {
         exclude group: 'xml-apis', module: 'xml-apis-ext'
     }
 }
